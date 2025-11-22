@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Pet Rocks | The Pet Rock Exchange</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="trade.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <h1>The Pet Rock Exchange</h1>
+            <ul>
+                <li><a href="main.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Trade Section -->
+    <main>
+        <div class="container trade-container">
+            <h2 class="section-title">Trade Proposal</h2>
+            <p class="trade-subtitle">From: <strong>@RockyTrader</strong></p>
+
+            <div class="trade-content">
+                <!-- Your Rock -->
+                <div class="rock-section">
+                    <h3>Your Pet Rock</h3>
+                    <div class="rock-card">
+                        <img src="assets/images/rock1.jpg" alt="Rocky Red">
+                        <div class="rock-info">
+                            <p class="rock-name">Rocky Red</p>
+                            <p class="rock-price">💎 <span>30</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trade Arrow -->
+                <div class="trade-arrow">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#e67e22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#e67e22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Their Rock -->
+                <div class="rock-section">
+                    <h3>Their Pet Rock</h3>
+                    <div class="rock-card">
+                        <img src="assets/images/rock2.jpg" alt="Blue Boulder">
+                        <div class="rock-info">
+                            <p class="rock-name">Blue Boulder</p>
+                            <p class="rock-price">💎 <span>35</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trade Value Info -->
+            <div class="trade-value">
+                <p><strong>Trade Value Difference:</strong> 💎 <span id="valueDiff">+5</span> in your favor</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="trade-actions">
+                <button class="trade-btn accept-btn" id="acceptBtn">Accept Trade</button>
+                <button class="trade-btn reject-btn" id="rejectBtn">Reject Trade</button>
+                <button class="trade-btn counter-btn" id="counterBtn">Counter-Offer</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 The Pet Rock Exchange. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("acceptBtn").addEventListener("click", () => {
+            alert("🎉 Trade accepted! Your rocks have been exchanged.");
+        });
+
+        document.getElementById("rejectBtn").addEventListener("click", () => {
+            alert("❌ Trade rejected. The offer has been declined.");
+        });
+
+        document.getElementById("counterBtn").addEventListener("click", () => {
+            alert("💬 Counter-offer initiated. You can now propose a different trade.");
+        });
+    </script>
+</body>
+</html>

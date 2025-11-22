@@ -1,0 +1,133 @@
+/* General layout */
+.profile-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f5f0e6;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(101, 67, 33, 0.3);
+    color: #4b3b2a;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #a78b5f;
+    box-shadow: 0 2px 6px rgba(101, 67, 33, 0.3);
+}
+
+.profile-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-header p {
+    font-size: 1rem;
+    color: #6b4f3f;
+}
+
+/* Profile details section */
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.detail-card {
+    background-color: #ece5db;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 6px rgba(101, 67, 33, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.detail-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(101, 67, 33, 0.3);
+}
+
+.detail-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4b3b2a;
+}
+
+.detail-card p {
+    color: #6b4f3f;
+    font-size: 0.95rem;
+}
+
+/* Edit button */
+.edit-profile-btn {
+    display: inline-block;
+    background-color: #a78b5f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #8c7350;
+}
+
+/* Owned rocks section */
+.owned-rocks {
+    margin-top: 3rem;
+}
+
+.owned-rocks h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #4b3b2a;
+}
+
+.owned-rocks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.owned-rock-card {
+    background-color: #f5f0e6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(101, 67, 33, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.owned-rock-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(101, 67, 33, 0.4);
+}
+
+.owned-rock-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owned-rock-card p {
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    color: #6b4f3f;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}

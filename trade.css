@@ -1,0 +1,185 @@
+/* Trade Page Specific Styles */
+
+.trade-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trade-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.trade-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.rock-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.rock-section h3 {
+    font-size: 1.3em;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rock-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rock-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rock-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.rock-info {
+    text-align: center;
+}
+
+.rock-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.rock-price {
+    font-size: 1.5em;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.rock-price span {
+    color: #e67e22;
+}
+
+.trade-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.trade-value {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trade-value p {
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+.trade-value #valueDiff {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.trade-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trade-btn {
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.accept-btn {
+    background: #27ae60;
+    color: white;
+}
+
+.accept-btn:hover {
+    background: #229954;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+.reject-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.reject-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.counter-btn {
+    background: #3498db;
+    color: white;
+}
+
+.counter-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trade-content {
+        flex-direction: column;
+    }
+
+    .trade-arrow {
+        flex-direction: row;
+        transform: rotate(90deg);
+    }
+
+    .rock-section {
+        width: 100%;
+    }
+
+    .trade-actions {
+        flex-direction: column;
+    }
+
+    .trade-btn {
+        width: 100%;
+    }
+}

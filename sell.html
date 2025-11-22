@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Pet Rock | The Pet Rock Exchange</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <h1>The Pet Rock Exchange</h1>
+            <ul>
+                <li><a href="main.html">Buy</a></li>
+                <li><a href="sell.html" class="active">Sell</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Sell Section -->
+    <main>
+        <div class="container sell-container">
+            <h2 class="section-title">List Your Pet Rock for Adoption</h2>
+
+            <div class="sell-content">
+                <!-- Rock Display -->
+                <div class="rock-preview">
+                    <img src="assets/images/sample-rock.jpg" alt="Your Pet Rock">
+                    <div class="price-info">
+                        <p><strong>Suggested Price:</strong> 💎 <span id="rockPrice">15</span></p>
+                    </div>
+                </div>
+
+                <!-- Listing Form -->
+                <div class="listing-form">
+                    <form id="listForm">
+                        <label for="rockName">Pet Rock Name</label>
+                        <input type="text" id="rockName" placeholder="Enter rock's name" required>
+
+                        <label for="rockDescription">Description</label>
+                        <textarea id="rockDescription" placeholder="Describe your rock" required></textarea>
+
+                        <label for="designerName">Designer Name</label>
+                        <input type="text" id="designerName" placeholder="Your name" required>
+
+                        <button type="submit" class="list-btn">List Pet Rock</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 The Pet Rock Exchange. All rights reserved.
+    </footer>
+
+    <script>
+        const form = document.getElementById("listForm");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = document.getElementById("rockName").value;
+            alert(`🪨 ${name} has been listed successfully!`);
+            form.reset();
+        });
+    </script>
+</body>
+</html>
