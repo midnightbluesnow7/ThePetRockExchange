@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Profile | The Pet Rock Exchange</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="account.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -13,10 +13,10 @@
         <div class="nav-container">
             <h1>The Pet Rock Exchange</h1>
             <ul>
-                <li><a href="main.html">Buy</a></li>
+                <li><a href="buy.php">Buy</a></li>
                 <li><a href="sell.html">Sell</a></li>
                 <li><a href="trade.html">Trade</a></li>
-                <li><a href="profile.html">Account</a></li>
+                <li><a href="account.html">Account</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </div>
@@ -28,9 +28,9 @@
             <!-- Profile Header -->
             <div class="profile-header">
                 <img src="assets/images/profile.jpg" alt="User Profile Picture">
-                <div>
+                <div class="profile-info">
                     <h2>Alex Stonekeeper</h2>
-                    <p>@AStone | Member since 2023 | 45 trades completed</p>
+                    <p>@AStone | Member Since 2023 | 45 Trades Completed</p>
                     <button class="edit-profile-btn">Edit Profile</button>
                 </div>
             </div>
@@ -45,6 +45,7 @@
                 <div class="detail-card">
                     <h3>Balance</h3>
                     <p>125 💎</p>
+                    <a href="#" class="manage-link">Manage Balances</a>
                 </div>
 
                 <div class="detail-card">
@@ -53,25 +54,63 @@
                 </div>
             </div>
 
-            <!-- Owned Rocks Section -->
-            <div class="owned-rocks">
-                <h3>Your Pet Rocks</h3>
-                <div class="owned-rocks-grid">
-                    <div class="owned-rock-card">
-                        <img src="assets/images/rock1.jpg" alt="Rocky Red">
-                        <p>Rocky Red</p>
+            <!-- Two Column Content -->
+            <div class="profile-content">
+                <!-- Owned Pet Rocks -->
+                <div class="content-card">
+                    <h3>Owned Pet Rocks</h3>
+                    <div class="rocks-grid">
+                        <div class="rock-item">
+                            <img src="assets/images/img1.png" alt="Rocky Red">
+                            <p>Rocky Red</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img2.png" alt="Blue Boulder">
+                            <p>Blue Boulder</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img3.png" alt="Golden Gem">
+                            <p>Golden Gem</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img4.png" alt="Shadow Stone">
+                            <p>Shadow Stone</p>
+                        </div>
                     </div>
-                    <div class="owned-rock-card">
-                        <img src="assets/images/rock2.jpg" alt="Blue Boulder">
-                        <p>Blue Boulder</p>
+                    <div class="pagination">
+                        <span>Page 1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span class="dots">•••</span>
                     </div>
-                    <div class="owned-rock-card">
-                        <img src="assets/images/rock3.jpg" alt="Golden Pebble">
-                        <p>Golden Pebble</p>
+                </div>
+
+                <!-- Trade History -->
+                <div class="content-card">
+                    <h3>Trade History</h3>
+                    <div class="rocks-grid">
+                        <div class="rock-item">
+                            <img src="assets/images/img1.png" alt="Pink Pebble">
+                            <p>Pink Pebble</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img2.png" alt="Silver Skipper">
+                            <p>Silver Skipper</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img3.png" alt="Patrick the Rock">
+                            <p>Patrick the Rock</p>
+                        </div>
+                        <div class="rock-item">
+                            <img src="assets/images/img4.png" alt="Chocolate Chip">
+                            <p>Chocolate Chip</p>
+                        </div>
                     </div>
-                    <div class="owned-rock-card">
-                        <img src="assets/images/rock4.jpg" alt="Shadow Stone">
-                        <p>Shadow Stone</p>
+                    <div class="pagination">
+                        <span>Page 1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span class="dots">•••</span>
                     </div>
                 </div>
             </div>
